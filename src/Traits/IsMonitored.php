@@ -143,8 +143,6 @@ trait IsMonitored
             return null;
         }
 
-        Log::info(QueueMonitor::getJobId($this->job));
-
         $model = QueueMonitor::getModel();
 
         return $model::whereJob($jobId)
