@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Tests\Support;
+namespace elsayed85\QueueMonitor\Tests\Support;
 
-use romanzipp\QueueMonitor\Traits\IsMonitored;
+use elsayed85\QueueMonitor\Traits\IsMonitored;
 
 class MonitoredJobWithMergedDataConflicting extends BaseJob
 {

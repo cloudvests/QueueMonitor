@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Controllers\Payloads;
+namespace elsayed85\QueueMonitor\Controllers\Payloads;
 
 final class Metric
 {

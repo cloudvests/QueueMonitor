@@ -1,15 +1,15 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Tests;
+namespace elsayed85\QueueMonitor\Tests;
 
 use Exception;
-use romanzipp\QueueMonitor\Models\Monitor;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredJobWithData;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredJobWithMergedData;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredJobWithMergedDataConflicting;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredJobWithProgress;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldown;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldownMockingTime;
+use elsayed85\QueueMonitor\Models\Monitor;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithData;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithMergedData;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithMergedDataConflicting;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithProgress;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldown;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldownMockingTime;
 
 class MonitorAttributesTest extends TestCase
 {

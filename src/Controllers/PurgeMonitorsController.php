@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Controllers;
+namespace elsayed85\QueueMonitor\Controllers;
 
 use Illuminate\Http\Request;
-use romanzipp\QueueMonitor\Models\Contracts\MonitorContract;
-use romanzipp\QueueMonitor\Services\QueueMonitor;
+use elsayed85\QueueMonitor\Models\Contracts\MonitorContract;
+use elsayed85\QueueMonitor\Services\QueueMonitor;
 
 class PurgeMonitorsController
 {

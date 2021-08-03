@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Services;
+namespace elsayed85\QueueMonitor\Services;
 
 use Illuminate\Contracts\Queue\Job as JobContract;
 use Illuminate\Queue\Events\JobExceptionOccurred;
@@ -9,8 +9,8 @@ use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Log;
-use romanzipp\QueueMonitor\Models\Contracts\MonitorContract;
-use romanzipp\QueueMonitor\Traits\IsMonitored;
+use elsayed85\QueueMonitor\Models\Contracts\MonitorContract;
+use elsayed85\QueueMonitor\Traits\IsMonitored;
 use Throwable;
 
 class QueueMonitor
@@ -24,7 +24,7 @@ class QueueMonitor
     /**
      * Get the model used to store the monitoring data.
      *
-     * @return \romanzipp\QueueMonitor\Models\Contracts\MonitorContract
+     * @return \elsayed85\QueueMonitor\Models\Contracts\MonitorContract
      */
     public static function getModel(): MonitorContract
     {

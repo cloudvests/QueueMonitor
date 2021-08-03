@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Tests;
+namespace elsayed85\QueueMonitor\Tests;
 
-use romanzipp\QueueMonitor\Services\ClassUses;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredExtendingJob;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredJob;
-use romanzipp\QueueMonitor\Traits\IsMonitored;
+use elsayed85\QueueMonitor\Services\ClassUses;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredExtendingJob;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredJob;
+use elsayed85\QueueMonitor\Traits\IsMonitored;
 
 class ClassUsesTraitTest extends TestCase
 {

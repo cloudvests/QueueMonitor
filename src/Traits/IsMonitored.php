@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Traits;
+namespace elsayed85\QueueMonitor\Traits;
 
 use Illuminate\Support\Facades\Log;
-use romanzipp\QueueMonitor\Models\Contracts\MonitorContract;
-use romanzipp\QueueMonitor\Services\QueueMonitor;
+use elsayed85\QueueMonitor\Models\Contracts\MonitorContract;
+use elsayed85\QueueMonitor\Services\QueueMonitor;
 
 /**
  * @mixin \Illuminate\Queue\InteractsWithQueue

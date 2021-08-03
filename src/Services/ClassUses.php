@@ -26,7 +26,7 @@
  * THE SOFTWARE.
  */
 
-namespace romanzipp\QueueMonitor\Services;
+namespace elsayed85\QueueMonitor\Services;
 
 class ClassUses
 {

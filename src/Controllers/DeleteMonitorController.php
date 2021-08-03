@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Controllers;
+namespace elsayed85\QueueMonitor\Controllers;
 
 use Illuminate\Http\Request;
-use romanzipp\QueueMonitor\Models\Monitor;
+use elsayed85\QueueMonitor\Models\Monitor;
 
 class DeleteMonitorController
 {

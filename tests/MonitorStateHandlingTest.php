@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Tests;
+namespace elsayed85\QueueMonitor\Tests;
 
-use romanzipp\QueueMonitor\Models\Monitor;
-use romanzipp\QueueMonitor\Tests\Support\IntentionallyFailedException;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredFailingJob;
-use romanzipp\QueueMonitor\Tests\Support\MonitoredFailingJobWithHugeExceptionMessage;
+use elsayed85\QueueMonitor\Models\Monitor;
+use elsayed85\QueueMonitor\Tests\Support\IntentionallyFailedException;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredFailingJob;
+use elsayed85\QueueMonitor\Tests\Support\MonitoredFailingJobWithHugeExceptionMessage;
 
 class MonitorStateHandlingTest extends TestCase
 {

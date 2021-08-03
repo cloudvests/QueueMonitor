@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Tests;
+namespace elsayed85\QueueMonitor\Tests;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-use romanzipp\QueueMonitor\Models\Monitor;
+use elsayed85\QueueMonitor\Models\Monitor;
 
 class MonitorTimeCalculationTest extends TestCase
 {

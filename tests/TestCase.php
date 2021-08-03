@@ -1,14 +1,14 @@
 <?php
 
-namespace romanzipp\QueueMonitor\Tests;
+namespace elsayed85\QueueMonitor\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use romanzipp\QueueMonitor\Providers\QueueMonitorProvider;
-use romanzipp\QueueMonitor\Services\QueueMonitor;
-use romanzipp\QueueMonitor\Tests\Support\BaseJob;
+use elsayed85\QueueMonitor\Providers\QueueMonitorProvider;
+use elsayed85\QueueMonitor\Services\QueueMonitor;
+use elsayed85\QueueMonitor\Tests\Support\BaseJob;
 
 class TestCase extends BaseTestCase
 {

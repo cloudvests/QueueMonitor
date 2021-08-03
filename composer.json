@@ -5,7 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "romanzipp",
+            "name": "elsayed85",
             "email": "ich@ich.wtf",
             "homepage": "https://ich.wtf"
         }
@@ -25,16 +25,16 @@
         "mockery/mockery": "^1.3.2",
         "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
         "phpunit/phpunit": "^8.0|^9.0",
-        "romanzipp/php-cs-fixer-config": "^1.0"
+        "elsayed85/php-cs-fixer-config": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "romanzipp\\QueueMonitor\\": "src"
+            "elsayed85\\QueueMonitor\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "romanzipp\\QueueMonitor\\Tests\\": "tests"
+            "elsayed85\\QueueMonitor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "romanzipp\\QueueMonitor\\Providers\\QueueMonitorProvider"
+                "elsayed85\\QueueMonitor\\Providers\\QueueMonitorProvider"
             ]
         }
     },
