@@ -2,6 +2,7 @@
 
 namespace romanzipp\QueueMonitor\Traits;
 
+use Illuminate\Support\Facades\Log;
 use romanzipp\QueueMonitor\Models\Contracts\MonitorContract;
 use romanzipp\QueueMonitor\Services\QueueMonitor;
 
@@ -35,7 +36,7 @@ trait IsMonitored
     {
         $progress = min(100, max(0, $progress));
 
-        if ( ! $monitor = $this->getQueueMonitor()) {
+        if (!$monitor = $this->getQueueMonitor()) {
             return;
         }
 
@@ -75,7 +76,7 @@ trait IsMonitored
      */
     public function queueData(array $data, bool $merge = false): void
     {
-        if ( ! $monitor = $this->getQueueMonitor()) {
+        if (!$monitor = $this->getQueueMonitor()) {
             return;
         }
 
@@ -116,7 +117,7 @@ trait IsMonitored
      */
     protected function deleteQueueMonitor(): void
     {
-        if ( ! $monitor = $this->getQueueMonitor()) {
+        if (!$monitor = $this->getQueueMonitor()) {
             return;
         }
 
@@ -130,17 +131,19 @@ trait IsMonitored
      */
     protected function getQueueMonitor(): ?MonitorContract
     {
-        if ( ! property_exists($this, 'job')) {
+        if (!property_exists($this, 'job')) {
             return null;
         }
 
-        if ( ! $this->job) {
+        if (!$this->job) {
             return null;
         }
 
-        if ( ! $jobId = QueueMonitor::getJobId($this->job)) {
+        if (!$jobId = QueueMonitor::getJobId($this->job)) {
             return null;
         }
+
+        Log::info(QueueMonitor::getJobId($this->job));
 
         $model = QueueMonitor::getModel();
 
