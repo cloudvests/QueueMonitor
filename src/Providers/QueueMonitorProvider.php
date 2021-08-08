@@ -23,7 +23,7 @@ class QueueMonitorProvider extends ServiceProvider
     public function boot()
     {
         /** @var QueueManager $manager */
-        $manager = app(QueueManager::class);
+        $manager = new QueueManager($this->app);
 
         $manager->before(static function (JobProcessing $event) {
             QueueMonitor::handleJobProcessing($event);
