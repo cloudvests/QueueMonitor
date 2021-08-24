@@ -1,9 +1,9 @@
 # Laravel Queue Monitor
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/elsayed85/laravel-queue-monitor.svg?style=flat-square)](https://packagist.org/packages/elsayed85/laravel-queue-monitor)
-[![Total Downloads](https://img.shields.io/packagist/dt/elsayed85/laravel-queue-monitor.svg?style=flat-square)](https://packagist.org/packages/elsayed85/laravel-queue-monitor)
-[![License](https://img.shields.io/packagist/l/elsayed85/laravel-queue-monitor.svg?style=flat-square)](https://packagist.org/packages/elsayed85/laravel-queue-monitor)
-[![GitHub Build Status](https://img.shields.io/github/workflow/status/elsayed85/Laravel-Queue-Monitor/Tests?style=flat-square)](https://github.com/elsayed85/Laravel-Queue-Monitor/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/cloudvests/laravel-queue-monitor.svg?style=flat-square)](https://packagist.org/packages/cloudvests/laravel-queue-monitor)
+[![Total Downloads](https://img.shields.io/packagist/dt/cloudvests/laravel-queue-monitor.svg?style=flat-square)](https://packagist.org/packages/cloudvests/laravel-queue-monitor)
+[![License](https://img.shields.io/packagist/l/cloudvests/laravel-queue-monitor.svg?style=flat-square)](https://packagist.org/packages/cloudvests/laravel-queue-monitor)
+[![GitHub Build Status](https://img.shields.io/github/workflow/status/cloudvests/Laravel-Queue-Monitor/Tests?style=flat-square)](https://github.com/cloudvests/Laravel-Queue-Monitor/actions)
 
 This package offers monitoring like [Laravel Horizon](https://laravel.com/docs/horizon) for database queue.
 
@@ -18,7 +18,7 @@ This package offers monitoring like [Laravel Horizon](https://laravel.com/docs/h
 ## Installation
 
 ```
-composer require elsayed85/laravel-queue-monitor
+composer require cloudvests/laravel-queue-monitor
 ```
 
 ## Configuration
@@ -26,7 +26,7 @@ composer require elsayed85/laravel-queue-monitor
 Copy configuration & migration to your project:
 
 ```
-php artisan vendor:publish --provider="elsayed85\QueueMonitor\Providers\QueueMonitorProvider"
+php artisan vendor:publish --provider="cloudvests\QueueMonitor\Providers\QueueMonitorProvider"
 ```
 
 Migrate the Queue Monitoring table. The table name can be configured in the config file or via the published migration.
@@ -37,7 +37,7 @@ php artisan migrate
 
 ## Usage
 
-To monitor a job, simply add the `elsayed85\QueueMonitor\Traits\IsMonitored` Trait.
+To monitor a job, simply add the `cloudvests\QueueMonitor\Traits\IsMonitored` Trait.
 
 ```php
 use Illuminate\Bus\Queueable;
@@ -45,7 +45,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use elsayed85\QueueMonitor\Traits\IsMonitored; // <---
+use cloudvests\QueueMonitor\Traits\IsMonitored; // <---
 
 class ExampleJob implements ShouldQueue
 {
@@ -75,9 +75,9 @@ Route::prefix('jobs')->group(function () {
 | ----- | ------------------- |
 | `/`   | Show the jobs table |
 
-See the [full configuration file](https://github.com/elsayed85/Laravel-Queue-Monitor/blob/master/config/queue-monitor.php) for more information.
+See the [full configuration file](https://github.com/cloudvests/Laravel-Queue-Monitor/blob/master/config/queue-monitor.php) for more information.
 
-![Preview](https://raw.githubusercontent.com/elsayed85/Laravel-Queue-Monitor/master/preview.png)
+![Preview](https://raw.githubusercontent.com/cloudvests/Laravel-Queue-Monitor/master/preview.png)
 
 
 ## Extended usage
@@ -88,7 +88,7 @@ You can set a **progress value** (0-100) to get an estimation of a job progressi
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use elsayed85\QueueMonitor\Traits\IsMonitored;
+use cloudvests\QueueMonitor\Traits\IsMonitored;
 
 class ExampleJob implements ShouldQueue
 {
@@ -118,7 +118,7 @@ This example job loops through a large amount of users and updates it's progress
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Collection;
-use elsayed85\QueueMonitor\Traits\IsMonitored;
+use cloudvests\QueueMonitor\Traits\IsMonitored;
 
 class ChunkJob implements ShouldQueue
 {
@@ -149,7 +149,7 @@ To avoid flooding the database with rapidly repeating update queries, you can se
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use elsayed85\QueueMonitor\Traits\IsMonitored;
+use cloudvests\QueueMonitor\Traits\IsMonitored;
 
 class LazyJob implements ShouldQueue
 {
@@ -168,7 +168,7 @@ This package also allows setting custom data in array syntax on the monitoring m
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use elsayed85\QueueMonitor\Traits\IsMonitored;
+use cloudvests\QueueMonitor\Traits\IsMonitored;
 
 class CustomDataJob implements ShouldQueue
 {
@@ -204,7 +204,7 @@ You can override the `keepMonitorOnSuccess()` method to only store failed monito
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use elsayed85\QueueMonitor\Traits\IsMonitored;
+use cloudvests\QueueMonitor\Traits\IsMonitored;
 
 class FrequentSucceedingJob implements ShouldQueue
 {
@@ -220,7 +220,7 @@ class FrequentSucceedingJob implements ShouldQueue
 ### Retrieve processed Jobs
 
 ```php
-use elsayed85\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Models\Monitor;
 
 $job = Monitor::query()->first();
 
@@ -248,7 +248,7 @@ $job->getBasename();
 ### Model Scopes
 
 ```php
-use elsayed85\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Models\Monitor;
 
 // Filter by Status
 Monitor::failed();
@@ -264,7 +264,7 @@ Monitor::today()->failed();
 
 ## Upgrading
 
-- [Upgrade from 1.0 to 2.0](https://github.com/elsayed85/Laravel-Queue-Monitor/releases/tag/2.0.0)
+- [Upgrade from 1.0 to 2.0](https://github.com/cloudvests/Laravel-Queue-Monitor/releases/tag/2.0.0)
 
 ----
 

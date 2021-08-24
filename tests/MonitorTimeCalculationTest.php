@@ -1,10 +1,10 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests;
+namespace cloudvests\QueueMonitor\Tests;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-use elsayed85\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Models\Monitor;
 
 class MonitorTimeCalculationTest extends TestCase
 {

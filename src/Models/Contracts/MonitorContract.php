@@ -1,9 +1,9 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Models\Contracts;
+namespace cloudvests\QueueMonitor\Models\Contracts;
 
 /**
- * @mixin \elsayed85\QueueMonitor\Models\Monitor
+ * @mixin \cloudvests\QueueMonitor\Models\Monitor
  */
 interface MonitorContract
 {

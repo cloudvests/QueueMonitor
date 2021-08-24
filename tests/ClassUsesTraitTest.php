@@ -1,11 +1,11 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests;
+namespace cloudvests\QueueMonitor\Tests;
 
-use elsayed85\QueueMonitor\Services\ClassUses;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredExtendingJob;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJob;
-use elsayed85\QueueMonitor\Traits\IsMonitored;
+use cloudvests\QueueMonitor\Services\ClassUses;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredExtendingJob;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJob;
+use cloudvests\QueueMonitor\Traits\IsMonitored;
 
 class ClassUsesTraitTest extends TestCase
 {

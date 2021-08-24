@@ -1,6 +1,6 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests\Support;
+namespace cloudvests\QueueMonitor\Tests\Support;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

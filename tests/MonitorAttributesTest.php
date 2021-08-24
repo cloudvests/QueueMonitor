@@ -1,15 +1,15 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests;
+namespace cloudvests\QueueMonitor\Tests;
 
 use Exception;
-use elsayed85\QueueMonitor\Models\Monitor;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithData;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithMergedData;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithMergedDataConflicting;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithProgress;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldown;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldownMockingTime;
+use cloudvests\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJobWithData;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJobWithMergedData;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJobWithMergedDataConflicting;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJobWithProgress;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldown;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJobWithProgressCooldownMockingTime;
 
 class MonitorAttributesTest extends TestCase
 {

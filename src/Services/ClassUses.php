@@ -26,7 +26,7 @@
  * THE SOFTWARE.
  */
 
-namespace elsayed85\QueueMonitor\Services;
+namespace cloudvests\QueueMonitor\Services;
 
 class ClassUses
 {

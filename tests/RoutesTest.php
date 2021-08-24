@@ -1,11 +1,11 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests;
+namespace cloudvests\QueueMonitor\Tests;
 
 use Illuminate\Routing\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route as RouteFacade;
-use elsayed85\QueueMonitor\Controllers\ShowQueueMonitorController;
+use cloudvests\QueueMonitor\Controllers\ShowQueueMonitorController;
 
 class RoutesTest extends TestCase
 {
@@ -18,7 +18,7 @@ class RoutesTest extends TestCase
         $this->assertInstanceOf(Route::class, $route = app(Router::class)->getRoutes()->getByAction(ShowQueueMonitorController::class));
 
         $this->assertEquals('jobs', $route->uri);
-        $this->assertEquals('\elsayed85\QueueMonitor\Controllers\ShowQueueMonitorController', $route->getAction('controller'));
+        $this->assertEquals('\cloudvests\QueueMonitor\Controllers\ShowQueueMonitorController', $route->getAction('controller'));
     }
 
     public function testRouteCreationInNamespace()
@@ -30,6 +30,6 @@ class RoutesTest extends TestCase
         $this->assertInstanceOf(Route::class, $route = app(Router::class)->getRoutes()->getByAction(ShowQueueMonitorController::class));
 
         $this->assertEquals('jobs', $route->uri);
-        $this->assertEquals('\elsayed85\QueueMonitor\Controllers\ShowQueueMonitorController', $route->getAction('controller'));
+        $this->assertEquals('\cloudvests\QueueMonitor\Controllers\ShowQueueMonitorController', $route->getAction('controller'));
     }
 }

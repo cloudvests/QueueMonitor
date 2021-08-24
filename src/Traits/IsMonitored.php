@@ -1,10 +1,10 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Traits;
+namespace cloudvests\QueueMonitor\Traits;
 
 use Illuminate\Support\Facades\Log;
-use elsayed85\QueueMonitor\Models\Contracts\MonitorContract;
-use elsayed85\QueueMonitor\Services\QueueMonitor;
+use cloudvests\QueueMonitor\Models\Contracts\MonitorContract;
+use cloudvests\QueueMonitor\Services\QueueMonitor;
 
 /**
  * @mixin \Illuminate\Queue\InteractsWithQueue

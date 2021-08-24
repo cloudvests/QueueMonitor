@@ -1,6 +1,6 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Controllers\Payloads;
+namespace cloudvests\QueueMonitor\Controllers\Payloads;
 
 final class Metric
 {

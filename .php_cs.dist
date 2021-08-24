@@ -1,8 +1,8 @@
 <?php
 
-return elsayed85\Fixer\Config::make()
+return cloudvests\Fixer\Config::make()
     ->in(__DIR__)
     ->preset(
-        new elsayed85\Fixer\Presets\PrettyLaravel()
+        new cloudvests\Fixer\Presets\PrettyLaravel()
     )
     ->out();

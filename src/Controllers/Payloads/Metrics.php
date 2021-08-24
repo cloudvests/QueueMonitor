@@ -1,16 +1,16 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Controllers\Payloads;
+namespace cloudvests\QueueMonitor\Controllers\Payloads;
 
 final class Metrics
 {
     /**
-     * @var \elsayed85\QueueMonitor\Controllers\Payloads\Metric[]
+     * @var \cloudvests\QueueMonitor\Controllers\Payloads\Metric[]
      */
     public $metrics = [];
 
     /**
-     * @return \elsayed85\QueueMonitor\Controllers\Payloads\Metric[]
+     * @return \cloudvests\QueueMonitor\Controllers\Payloads\Metric[]
      */
     public function all(): array
     {

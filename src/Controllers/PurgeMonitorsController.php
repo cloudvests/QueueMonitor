@@ -1,10 +1,10 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Controllers;
+namespace cloudvests\QueueMonitor\Controllers;
 
 use Illuminate\Http\Request;
-use elsayed85\QueueMonitor\Models\Contracts\MonitorContract;
-use elsayed85\QueueMonitor\Services\QueueMonitor;
+use cloudvests\QueueMonitor\Models\Contracts\MonitorContract;
+use cloudvests\QueueMonitor\Services\QueueMonitor;
 
 class PurgeMonitorsController
 {

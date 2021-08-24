@@ -1,6 +1,6 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Providers;
+namespace cloudvests\QueueMonitor\Providers;
 
 use Illuminate\Queue\Events\JobExceptionOccurred;
 use Illuminate\Queue\Events\JobFailed;
@@ -9,9 +9,9 @@ use Illuminate\Queue\Events\JobProcessing;
 use Illuminate\Queue\QueueManager;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use elsayed85\QueueMonitor\Models\Monitor;
-use elsayed85\QueueMonitor\Routes\QueueMonitorRoutes;
-use elsayed85\QueueMonitor\Services\QueueMonitor;
+use cloudvests\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Routes\QueueMonitorRoutes;
+use cloudvests\QueueMonitor\Services\QueueMonitor;
 
 class QueueMonitorProvider extends ServiceProvider
 {

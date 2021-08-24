@@ -1,8 +1,8 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests\Support;
+namespace cloudvests\QueueMonitor\Tests\Support;
 
-use elsayed85\QueueMonitor\Traits\IsMonitored;
+use cloudvests\QueueMonitor\Traits\IsMonitored;
 
 class MonitoredPartiallyKeptFailingJob extends BaseJob
 {

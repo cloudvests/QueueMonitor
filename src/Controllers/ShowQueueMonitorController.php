@@ -1,16 +1,16 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Controllers;
+namespace cloudvests\QueueMonitor\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
-use elsayed85\QueueMonitor\Controllers\Payloads\Metric;
-use elsayed85\QueueMonitor\Controllers\Payloads\Metrics;
-use elsayed85\QueueMonitor\Models\Contracts\MonitorContract;
-use elsayed85\QueueMonitor\Services\QueueMonitor;
+use cloudvests\QueueMonitor\Controllers\Payloads\Metric;
+use cloudvests\QueueMonitor\Controllers\Payloads\Metrics;
+use cloudvests\QueueMonitor\Models\Contracts\MonitorContract;
+use cloudvests\QueueMonitor\Services\QueueMonitor;
 
 class ShowQueueMonitorController
 {

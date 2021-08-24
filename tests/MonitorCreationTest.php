@@ -1,15 +1,15 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests;
+namespace cloudvests\QueueMonitor\Tests;
 
-use elsayed85\QueueMonitor\Models\Monitor;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredBroadcastingJob;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredExtendingJob;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJob;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredJobWithArguments;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredPartiallyKeptFailingJob;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredPartiallyKeptJob;
-use elsayed85\QueueMonitor\Tests\Support\UnmonitoredJob;
+use cloudvests\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredBroadcastingJob;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredExtendingJob;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJob;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredJobWithArguments;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredPartiallyKeptFailingJob;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredPartiallyKeptJob;
+use cloudvests\QueueMonitor\Tests\Support\UnmonitoredJob;
 
 class MonitorCreationTest extends TestCase
 {

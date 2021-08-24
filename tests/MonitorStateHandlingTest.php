@@ -1,11 +1,11 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Tests;
+namespace cloudvests\QueueMonitor\Tests;
 
-use elsayed85\QueueMonitor\Models\Monitor;
-use elsayed85\QueueMonitor\Tests\Support\IntentionallyFailedException;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredFailingJob;
-use elsayed85\QueueMonitor\Tests\Support\MonitoredFailingJobWithHugeExceptionMessage;
+use cloudvests\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Tests\Support\IntentionallyFailedException;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredFailingJob;
+use cloudvests\QueueMonitor\Tests\Support\MonitoredFailingJobWithHugeExceptionMessage;
 
 class MonitorStateHandlingTest extends TestCase
 {

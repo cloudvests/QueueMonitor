@@ -1,9 +1,9 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Controllers;
+namespace cloudvests\QueueMonitor\Controllers;
 
 use Illuminate\Http\Request;
-use elsayed85\QueueMonitor\Models\Monitor;
+use cloudvests\QueueMonitor\Models\Monitor;
 
 class DeleteMonitorController
 {

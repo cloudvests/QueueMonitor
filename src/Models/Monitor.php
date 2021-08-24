@@ -1,6 +1,6 @@
 <?php
 
-namespace elsayed85\QueueMonitor\Models;
+namespace cloudvests\QueueMonitor\Models;
 
 use Carbon\CarbonInterval;
 use Exception;
@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
-use elsayed85\QueueMonitor\Models\Contracts\MonitorContract;
+use cloudvests\QueueMonitor\Models\Contracts\MonitorContract;
 use Throwable;
 
 /**
